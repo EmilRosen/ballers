@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Card</title>
+
+  <style>
+    /*@font-face {
+      font-family: "KelmscottRoman";
+      src: url("/KelmscottRoman/KELMSCOT.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }*/
+
+    :root{
+      /* Design grid: 971 x 1359 px mapped to 2.5in x 3.5in */
+      --px-w: 500;
+      --px-h: 500;
+      --in-w: 2.5;
+      --in-h: 2.5;
+
+      /* Convert design px -> inches */
+      --x-unit: calc(var(--in-w) * 1in / var(--px-w));
+      --y-unit: calc(var(--in-h) * 1in / var(--px-h));
+    }
+
+    body { margin: 0; }
+
+    #card{
+      width: calc(var(--in-w) * 1in);
+      height: calc(var(--in-h) * 1in);
+      position: relative;
+      overflow: hidden;
+      font-family: "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Background image fills card */
+    #card .bg{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* expand to fill */
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .artcontainer{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: calc(620 * var(--y-unit));
+      top: calc((515 - (620 / 2)) * var(--y-unit)); /* center window on y=466 */
+      overflow: hidden;  /* crop anything outside */
+    }
+
+    .art{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 100%;
+      width: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    .title, .subtitle, .bodytext{
+      position: absolute;
+      z-index: 1;
+      color: #000;
+      font-weight: 400;
+    }
+
+    /* Always one line */
+    .title, .subtitle{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+      line-height: 1.2;
+    }
+
+    /* Title: x=78, bottom line y=165, max x=894 */
+    .title{
+      left: calc(90 * var(--x-unit));
+      top:  calc(160 * var(--y-unit));
+      transform: translateY(-100%); /* bottom aligns to y */
+      max-width: calc((894 - 90) * var(--x-unit));
+    }
+
+    /* Subtitle: x=60, bottom line y=281, max x=346 */
+    .subtitle{
+      left: calc(350 * var(--x-unit));
+      bottom: calc(10 * var(--y-unit));
+      /*transform: translateY(-100%);
+      max-width: calc((346 - 60) * var(--x-unit));
+      font-size: clamp(10pt, 1.2vw, 10pt);*/
+    }
+
+    /* Body div: (70,847) to (900,1295) */
+    .bodytext{
+      left:   1;
+      top:    1;
+      width:  100%;
+      height: 100%;
+      font-size: 12pt;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      line-height: 2.0;
+    }
+
+    .bodytext-inner{
+      width: 100%;
+    }
+
+    div.large {
+      font-size: 11pt;
+    }
+
+    img.sym {
+      height: 1.0em;
+      width: auto;              /* preserve aspect ratio */
+      vertical-align: -0.15em;  /* baseline alignment */
+      margin: 0 0.08em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="card">
+    <div class="bodytext">
+      <div class="bodytext-inner">
+        {{ Effect }}
+      </div>
+    </div>
+    <div class="subtitle">
+      {{ Strength }}
+    </div>
+  </div>
+</body>
+</html>
