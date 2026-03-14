@@ -332,6 +332,90 @@ def main():
         if driver is not None:
             driver.quit()
 
+def create_pcio_decks(
+    excel: str = "Cards.xlsx",
+    out: str = "decks",
+    project_name: str = "",
+) -> None:
+    """
+    Create one CSV per deck from the Excel workbook.
+
+    For every sheet in the workbook:
+    - Read rows
+    - Group rows by Deck
+    - Write one CSV per deck
+
+    CSV columns:
+    - label
+    - Deck
+    - image
+    - item-count
+    - item-key
+
+    Output filename:
+    - decks/<deckslug>_<sheetslug>.csv
+
+    Note:
+    - I use the sheet slug as the second part of the filename so decks with the
+      same name coming from different sheets do not overwrite each other.
+    """
+    excel_path = Path(excel)
+    out_dir = Path(out)
+
+    if not excel_path.exists():
+        raise FileNotFoundError(f"Excel file not found: {excel_path}")
+
+    if not project_name or not str(project_name).strip():
+        raise ValueError("project_name must be a non-empty string")
+
+    xls = pd.ExcelFile(excel_path)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    for sheet_name in xls.sheet_names:
+        df = pd.read_excel(xls, sheet_name=sheet_name)
+        df = normalize_columns(df)
+
+        if "Deck" not in df.columns:
+            continue
+
+        sheet_slug = slugify(sheet_name)
+        decks: Dict[str, List[Dict]] = {}
+
+        for row in iter_rows(df):
+            deck_raw = row.get("Deck")
+            name_raw = row.get("Name")
+
+            if not is_nonempty_str(deck_raw):
+                continue
+            if not is_nonempty_str(name_raw):
+                continue
+
+            deck_slug = slugify(deck_raw)
+            name_slug = slugify(name_raw)
+
+            record = {
+                "label": name_slug,
+                "Deck": deck_slug,
+                "image": (
+                    f"https://api.bitbucket.org/2.0/repositories/"
+                    f"skaffel/{project_name}/src/main/cards/{deck_slug}/{name_slug}.png"
+                ),
+                "item-count": row.get("Copies"),
+                "item-key": name_slug,
+            }
+
+            if deck_slug not in decks:
+                decks[deck_slug] = []
+            decks[deck_slug].append(record)
+
+        for deck_slug, records in decks.items():
+            out_path = out_dir / f"{deck_slug}_{sheet_slug}.csv"
+            pd.DataFrame(
+                records,
+                columns=["label", "Deck", "image", "item-count", "item-key"],
+            ).to_csv(out_path, index=False)
+            print(out_path.as_posix())
 
 if __name__ == "__main__":
     main()
+    create_pcio_decks(project_name="ballers")
