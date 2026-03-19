@@ -4,3 +4,8 @@ pillow
 openai
 openpyxl
 selenium
+Jupyterlab
+matplotlib
+ipympl
+ipywidgets
+mplcursors

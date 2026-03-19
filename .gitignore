@@ -51,3 +51,5 @@ Thumbs.db
 *venv*
 
 _tmp_render.html
+
+.ipynb_checkpoints/

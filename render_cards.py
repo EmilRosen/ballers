@@ -48,7 +48,7 @@ CARD_SHEETS: Dict[str, Dict] = {
     "Lanes": {"outputs": [("lane", "card_basic.html", "")]},
     "Balls": {"outputs": [("ball", "card_ball.html", "")]},
     "Stamps": {"outputs": [("resource", "card_ball.html", "")]},
-    "Black": {"outputs": [("black", "card_basic.html", "")]},
+    "Trials": {"outputs": [("trial", "card_basic.html", "")]},
     "Judgement": {"outputs": [("judgement", "card_basic.html", "")]},
 }
 
