@@ -1,4 +1,4 @@
 label,Deck,image,item-count,item-key
-yellow,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/yellow.png,8,yellow
-blue,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/blue.png,8,blue
-black,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/black.png,6,black
+yellow,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/yellow.png,6,yellow
+blue,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/blue.png,6,blue
+black,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/black.png,5,black

@@ -3,5 +3,8 @@ lane-1,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/
 lane-2,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-2.png,1,lane-2
 lane-3,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-3.png,1,lane-3
 lane-4,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-4.png,1,lane-4
-lane-5,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-5.png,1,lane-5
+lane-5,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-5.png,0,lane-5
 lane-6,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-6.png,1,lane-6
+lane-7,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-7.png,1,lane-7
+lane-8,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-8.png,1,lane-8
+lane-9,lane-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/lane-deck/lane-9.png,1,lane-9

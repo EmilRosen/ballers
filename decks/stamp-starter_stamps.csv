@@ -1,0 +1,6 @@
+label,Deck,image,item-count,item-key
+starting-stamp-1,stamp-starter,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/stamp-starter/starting-stamp-1.png,1,starting-stamp-1
+starting-stamp-2,stamp-starter,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/stamp-starter/starting-stamp-2.png,1,starting-stamp-2
+starting-stamp-3,stamp-starter,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/stamp-starter/starting-stamp-3.png,1,starting-stamp-3
+starting-stamp-4,stamp-starter,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/stamp-starter/starting-stamp-4.png,1,starting-stamp-4
+starting-stamp-5,stamp-starter,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/stamp-starter/starting-stamp-5.png,1,starting-stamp-5
