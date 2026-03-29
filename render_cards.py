@@ -46,8 +46,9 @@ from PIL import Image
 CARD_SHEETS: Dict[str, Dict] = {
     # sheet_name: { "outputs": [(card_type_name, template_path, filename_prefix), ...] }
     "Lanes": {"outputs": [("lane", "card_basic.html", "")]},
+    "Combolas": {"outputs": [("combola", "card_basic.html", "")]},
     "Balls": {"outputs": [("ball", "card_ball.html", "")]},
-    "Stamps": {"outputs": [("resource", "card_ball.html", "")]},
+    "Stamps": {"outputs": [("resource", "card_basic.html", "")]},
     "Trials": {"outputs": [("trial", "card_basic.html", "")]},
     "Judgement": {"outputs": [("judgement", "card_basic.html", "")]},
 }
@@ -374,6 +375,11 @@ def create_pcio_decks(
     for sheet_name in xls.sheet_names:
         df = pd.read_excel(xls, sheet_name=sheet_name)
         df = normalize_columns(df)
+
+        if "Requirements" not in df.columns:
+            df["Requirements"] = ""
+        if "Cost" not in df.columns:
+            df["Cost"] = ""
 
         if "Deck" not in df.columns:
             continue

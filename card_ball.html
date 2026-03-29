@@ -67,7 +67,7 @@
       transform: translate(-50%, -50%);
     }
 
-    .title, .subtitle, .bodytext{
+    .title, .subtitle, .uptitle, .bodytext{
       position: absolute;
       z-index: 1;
       color: #000;
@@ -75,7 +75,7 @@
     }
 
     /* Always one line */
-    .title, .subtitle{
+    .title, .uptitle, .subtitle{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: clip;
@@ -94,6 +94,14 @@
     .subtitle{
       left: calc(350 * var(--x-unit));
       bottom: calc(10 * var(--y-unit));
+      /*transform: translateY(-100%);
+      max-width: calc((346 - 60) * var(--x-unit));
+      font-size: clamp(10pt, 1.2vw, 10pt);*/
+    }
+
+    .uptitle{
+      left: calc(250 * var(--x-unit));
+      top: calc(10 * var(--y-unit));
       /*transform: translateY(-100%);
       max-width: calc((346 - 60) * var(--x-unit));
       font-size: clamp(10pt, 1.2vw, 10pt);*/
@@ -143,8 +151,15 @@
         {{ Effect }}
       </div>
     </div>
+    <div class="uptitle">
+      {% if Value %}
+        {{ Value }} Points
+      {% endif %}
+    </div>
     <div class="subtitle">
-      {{ Cost }}
+      {% if Cost %}
+        {{ Cost }}$
+      {% endif %}
     </div>
   </div>
 </body>
