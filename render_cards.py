@@ -402,7 +402,7 @@ def create_pcio_decks(
             record = {
                 "label": name_slug,
                 "Deck": deck_slug,
-                "image": f"https://storage.googleapis.com/tellus_public_assets/ballers/cards/{deck_slug}/{name_slug}.png",
+                "image": f"https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/{deck_slug}/{name_slug}.png",
                 "item-count": row.get("Copies"),
                 "item-key": name_slug,
             }

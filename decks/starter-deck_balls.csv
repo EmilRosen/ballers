@@ -1,3 +1,3 @@
 label,Deck,image,item-count,item-key
-stone,starter-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/starter-deck/stone.png,15,stone
-bomb,starter-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/starter-deck/bomb.png,5,bomb
+stone,starter-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/starter-deck/stone.png,15,stone
+bomb,starter-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/starter-deck/bomb.png,5,bomb
