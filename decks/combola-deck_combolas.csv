@@ -1,6 +1,6 @@
 label,Deck,image,item-count,item-key
-combola-1,combola-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/combola-deck/combola-1.png,1,combola-1
-combola-2,combola-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/combola-deck/combola-2.png,1,combola-2
-combola-3,combola-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/combola-deck/combola-3.png,1,combola-3
-combola-4,combola-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/combola-deck/combola-4.png,1,combola-4
-combola-5,combola-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/combola-deck/combola-5.png,1,combola-5
+combola-1,combola-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/combola-deck/combola-1.png,1,combola-1
+combola-2,combola-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/combola-deck/combola-2.png,1,combola-2
+combola-3,combola-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/combola-deck/combola-3.png,1,combola-3
+combola-4,combola-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/combola-deck/combola-4.png,1,combola-4
+combola-5,combola-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/combola-deck/combola-5.png,1,combola-5

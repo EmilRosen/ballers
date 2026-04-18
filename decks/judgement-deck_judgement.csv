@@ -1,4 +1,4 @@
 label,Deck,image,item-count,item-key
-judgement-1,judgement-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/judgement-deck/judgement-1.png,1,judgement-1
-judgement-2,judgement-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/judgement-deck/judgement-2.png,1,judgement-2
-judgement-3,judgement-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/judgement-deck/judgement-3.png,1,judgement-3
+judgement-1,judgement-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/judgement-deck/judgement-1.png,1,judgement-1
+judgement-2,judgement-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/judgement-deck/judgement-2.png,1,judgement-2
+judgement-3,judgement-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/judgement-deck/judgement-3.png,1,judgement-3

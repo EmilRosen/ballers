@@ -84,8 +84,8 @@
 
     /* Title: x=78, bottom line y=165, max x=894 */
     .title{
-      left: calc(90 * var(--x-unit));
-      top:  calc(160 * var(--y-unit));
+      left: calc(15 * var(--x-unit));
+      top:  calc(50 * var(--y-unit));
       transform: translateY(-100%); /* bottom aligns to y */
       max-width: calc((894 - 90) * var(--x-unit));
     }
@@ -141,24 +141,28 @@
     "Yellow": "255,255,0",
     "Blue": "0,0,255",
     "Black": "0,0,0",
-    "Green": "0,200,0"
+    "Green": "0,200,0",
+    "Brown": "165,42,42",
+    "Red": "255,0,0"
+} %}
+
+{% set rarity = {
+    "Starter": "128,128,128", 
+    "Common": "205,127,50",  
+    "Uncommon": "192,192,192", 
+    "Rare": "255,215,0"
 } %}
 
 <body>
   <div id="card">
-    <div class="bodytext"      style="background: rgba({{ colors[Color] }}, 0.1); border: 2px solid {{ Color }};">
+    <div class="bodytext"      style="background: rgba({{ colors[Color] }}, 0.1); border: 2px solid rgb({{ rarity[Rarity] }});">
       <div class="bodytext-inner">
         {{ Effect }}
       </div>
     </div>
-    <div class="uptitle">
-      {% if Value %}
-        {{ Value }} Points
-      {% endif %}
-    </div>
-    <div class="subtitle">
-      {% if Cost %}
-        {{ Cost }}$
+    <div class="title">
+      {% if Name %}
+        {{ Name }}
       {% endif %}
     </div>
   </div>

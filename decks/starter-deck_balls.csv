@@ -1,4 +1,3 @@
 label,Deck,image,item-count,item-key
-yellow,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/yellow.png,6,yellow
-blue,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/blue.png,6,blue
-black,starter-deck,https://api.bitbucket.org/2.0/repositories/skaffel/ballers/src/main/cards/starter-deck/black.png,5,black
+stone,starter-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/starter-deck/stone.png,15,stone
+bomb,starter-deck,https://storage.googleapis.com/tellus_public_assets/ballers/cards/starter-deck/bomb.png,5,bomb
