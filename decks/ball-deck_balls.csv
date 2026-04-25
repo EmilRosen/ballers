@@ -1,7 +1,5 @@
 label,Deck,image,item-count,item-key
-rainbow,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/rainbow.png,10,rainbow
+cloud,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/cloud.png,10,cloud
 platypus,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/platypus.png,10,platypus
 ninja-dude,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/ninja-dude.png,10,ninja-dude
 match,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/match.png,10,match
-granite,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/granite.png,10,granite
-fireworks,ball-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/ball-deck/fireworks.png,10,fireworks
