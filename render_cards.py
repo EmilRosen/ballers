@@ -46,8 +46,8 @@ from PIL import Image
 CARD_SHEETS: Dict[str, Dict] = {
     # sheet_name: { "outputs": [(card_type_name, template_path, filename_prefix), ...] }
     "Capsules": {"outputs": [("capsule", "card_ball.html", "")]},
-    "Tokens": {"outputs": [("token", "card_basic.html", "")]},
-    "Bombs": {"outputs": [("bomb", "card_basic.html", "")]},
+    "Tokens": {"outputs": [("token", "card_ball.html", "")]},
+    "Bombs": {"outputs": [("bomb", "card_ball.html", "")]},
 }
 
 # -----------------------
