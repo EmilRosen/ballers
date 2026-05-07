@@ -45,12 +45,9 @@ from PIL import Image
 # You can change these paths if you keep templates elsewhere.
 CARD_SHEETS: Dict[str, Dict] = {
     # sheet_name: { "outputs": [(card_type_name, template_path, filename_prefix), ...] }
-    "Lanes": {"outputs": [("lane", "card_basic.html", "")]},
-    "Combolas": {"outputs": [("combola", "card_basic.html", "")]},
-    "Balls": {"outputs": [("ball", "card_ball.html", "")]},
-    "Stamps": {"outputs": [("resource", "card_basic.html", "")]},
-    "Trials": {"outputs": [("trial", "card_basic.html", "")]},
-    "Judgement": {"outputs": [("judgement", "card_basic.html", "")]},
+    "Capsules": {"outputs": [("capsule", "card_ball.html", "")]},
+    "Tokens": {"outputs": [("token", "card_basic.html", "")]},
+    "Bombs": {"outputs": [("bomb", "card_basic.html", "")]},
 }
 
 # -----------------------
@@ -380,6 +377,8 @@ def create_pcio_decks(
             df["Requirements"] = ""
         if "Cost" not in df.columns:
             df["Cost"] = ""
+        if "Color" not in df.columns:
+            df["Color"] = "White"
 
         if "Deck" not in df.columns:
             continue
@@ -402,7 +401,7 @@ def create_pcio_decks(
             record = {
                 "label": name_slug,
                 "Deck": deck_slug,
-                "image": f"https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/main/cards/{deck_slug}/{name_slug}.png",
+                "image": f"https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/{deck_slug}/{name_slug}.png",
                 "item-count": row.get("Copies"),
                 "item-key": name_slug,
             }

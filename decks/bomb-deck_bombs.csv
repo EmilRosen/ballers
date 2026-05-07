@@ -1,0 +1,6 @@
+label,Deck,image,item-count,item-key
+cherry-bomb,bomb-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/bomb-deck/cherry-bomb.png,1,cherry-bomb
+fireworks,bomb-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/bomb-deck/fireworks.png,1,fireworks
+tnt,bomb-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/bomb-deck/tnt.png,1,tnt
+dynamite,bomb-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/bomb-deck/dynamite.png,1,dynamite
+poweder-keg,bomb-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/bomb-deck/poweder-keg.png,1,poweder-keg

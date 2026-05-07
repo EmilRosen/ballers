@@ -1,0 +1,3 @@
+label,Deck,image,item-count,item-key
+bomb,starter-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/starter-deck/bomb.png,5,bomb
+super-bomb,starter-deck,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/starter-deck/super-bomb.png,1,super-bomb
