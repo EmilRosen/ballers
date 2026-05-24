@@ -1,0 +1,7 @@
+label,Deck,image,item-count,item-key
+chemists-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/chemists-token.png,1,chemists-token
+nuclear-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/nuclear-token.png,1,nuclear-token
+gamblers-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/gamblers-token.png,1,gamblers-token
+x-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/x-token.png,1,x-token
+clover-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/clover-token.png,1,clover-token
+hand-token,token-deck-2,https://raw.githubusercontent.com/EmilRosen/ballers/refs/heads/dev/cards/token-deck-2/hand-token.png,1,hand-token
